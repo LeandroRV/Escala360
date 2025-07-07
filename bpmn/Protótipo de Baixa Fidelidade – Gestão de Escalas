@@ -1,0 +1,16 @@
+Protótipo de Baixa Fidelidade – Gestão de Escalas
+
++--------------------------------------------------------------+
+| ESCALA360 - GESTÃO DE PLANTÕES                              |
++--------------------------------------------------------------+
+| Semana: [ 01/07 - 07/07 ]  [◀]  [▶]                         |
+| Profissional: [Todos]   Local: [Todos]  Função: [Todos]      |
++--------------------------------------------------------------+
+| DIA     | HORÁRIO     | PROFISSIONAL         | STATUS        |
+|--------|-------------|----------------------|----------------|
+| Seg 01 | 08:00 - 12:00 | Dr. João Cardoso     | Confirmado   |
+| Seg 01 | 12:00 - 18:00 | *Vago*               | [Alocar]     |
+| Ter 02 | 08:00 - 12:00 | Enf. Maria Oliveira  | Substituído  |
+| Ter 02 | 12:00 - 18:00 | Dr. Pedro Henrique   | Confirmado   |
+| Qua 03 | 08:00 - 12:00 | *Substituição Pendente*             |
++--------------------------------------------------------------+
