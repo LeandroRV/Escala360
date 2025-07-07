@@ -1,0 +1,9 @@
+Inicio
+  ListaProfissionaisDisponiveis <- []
+  Para cada profissional ativo
+    Se estiver disponível no horário solicitado
+      Calcular carga horária acumulada da semana
+      Adicionar à ListaProfissionaisDisponiveis
+  Ordenar ListaProfissionaisDisponiveis por carga horária crescente
+  Retornar os 3 primeiros
+Fim

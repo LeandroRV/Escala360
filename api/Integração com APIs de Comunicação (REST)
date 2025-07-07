@@ -1,0 +1,40 @@
+# Contrato de Integração – API de Comunicação
+
+## Endpoint 1 – Enviar E-mail
+POST /api/email/confirmacao
+Authorization: Bearer {token}
+Content-Type: application/json
+
+```json
+{
+  "destinatario": "email@dominio.com",
+  "assunto": "Confirmação de Plantão",
+  "mensagem": "Você foi escalado para o plantão no dia 12/07 às 08:00."
+}
+
+
+Resposta
+```json
+{ "status": "enviado", "id_mensagem": "abc123" }
+
+
+Endpoint 2 – Notificar por WhatsApp
+POST /api/whatsapp/notificacao
+```json
+{
+  "telefone": "+554899999999",
+  "mensagem": "Você foi indicado como substituto para o plantão do dia 12/07 às 08:00."
+}
+
+
+Resposta
+```json
+{ "status": "entregue", "id_mensagem": "xyz789" }
+
+Endpoint 3 – Verificar Status
+GET /api/mensagem/status?id=abc123
+Authorization: Bearer {token}
+
+Resposta
+```json
+{ "status": "visualizado" }
